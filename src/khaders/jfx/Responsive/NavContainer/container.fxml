@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ScrollPane fx:id="menu" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" minHeight="-Infinity" minWidth="-Infinity" prefWidth="200.0">
+               <content>
+                  <VBox alignment="CENTER" style="-fx-background-color: #fff; -fx-border-color: #000;">
+                     <children>
+                        <JFXButton prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #323232; -fx-border-color: #ffac41; -fx-border-radius: 5;" text="Button" textFill="#ffac41" textOverrun="CLIP">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ffac41; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: #323232;" text="button" textFill="#323232" textOverrun="CLIP">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #323232;" text="Button" textFill="#ffac41" textOverrun="CLIP">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #323232;" textFill="#ffac41" textOverrun="CLIP">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ff1e56; -fx-border-color: #323232; -fx-border-radius: 5; -fx-background-radius: 5;" text="Button" textFill="#323232" textOverrun="CLIP">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #323232; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: #ff1e56;" textFill="#ff1e56" textOverrun="CLIP">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <ScrollPane fx:id="content" fitToHeight="true" fitToWidth="true" style="-fx-background-color: #323232;" HBox.hgrow="ALWAYS">
+               <content>
+                  <VBox minWidth="0.0" prefWidth="200.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+      <JFXHamburger fx:id="ham" style="-fx-background-color: #fff;" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="50.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </JFXHamburger>
+   </children>
+</AnchorPane>
